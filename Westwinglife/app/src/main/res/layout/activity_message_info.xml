@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingLeft="13dp"
+    android:paddingRight="13dp"
+    android:paddingTop="8dp"
+    android:background="@color/backcolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/llt_message_content"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:background="@drawable/bg_message_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/tv_title"
+            android:text="--"
+            android:textSize="15sp"
+            android:textColor="@color/black_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView android:id="@+id/tv_message_content"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginTop="10dp"
+            android:text="--"
+            android:textSize="13sp"
+            android:textColor="@color/black_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:background="@color/backcolor"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <TextView
+            android:id="@+id/tv_next"
+            android:text="查看详情"
+            android:layout_marginLeft="4dp"
+            android:textSize="12sp"
+            android:drawableRight="@drawable/gerenzhongxin_fanhuiyou"
+            android:gravity="center_vertical"
+            android:textColor="@color/black_base"
+            android:layout_width="match_parent"
+            android:layout_height="36dp" />
+    </LinearLayout>
+</LinearLayout>

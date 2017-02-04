@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+官方解析 动画循环加速器:
+——AccelerateInterpolator：动画从开始到结束，变化率是一个加速的过程。
+——DecelerateInterpolator：动画从开始到结束，变化率是一个减速的过程。
+——CycleInterpolator：动画从开始到结束，变化率是循环给定次数的正弦曲线。
+——AccelerateDecelerateInterpolator：动画从开始到结束，变化率是先加速后减速的过程。
+——LinearInterpolator：动画从开始到结束，变化率是线性变化。
+
+-->
+<cycleInterpolator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:cycles="5" />

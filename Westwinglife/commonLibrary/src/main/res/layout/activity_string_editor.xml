@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  文本编辑器  2015-06-14 -->
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+    android:background="#4D5052">
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:gravity="left"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:text="详细说明\nNewLine"
+        android:background="#7F070707"
+        android:textColor="#f3f3f3"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:background="#CC070707"
+        android:text="标题头"
+        android:textColor="#D5DDE5"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="1dp"
+        android:background="#7F070707">
+        <EditText
+            android:id="@+id/textItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:hint="请输入"
+            android:imeOptions="actionUnspecified"
+            android:inputType="text"
+            android:textCursorDrawable="@null"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:background="@drawable/text_editor_bg"
+            android:textColor="#f3f3f3"
+            android:textColorHint="#A9A9A9" />
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp"
+            android:padding="10dp"
+            android:background="@drawable/button_primary_selector"
+            android:layout_centerHorizontal="true"
+            android:enabled="true"
+            android:textColor="#e29a00"
+            android:textSize="18sp"
+            android:text="确 定" />
+    </LinearLayout>
+
+
+</LinearLayout>

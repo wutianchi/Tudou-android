@@ -1,0 +1,72 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.bentudou.westwinglife"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 16
+        versionName '1.2.4'
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        jumboMode true
+        preDexLibraries = false
+        incremental true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false // 是否混淆
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs{
+        debug{
+            storeFile file('keystore.jks')
+            storePassword "bentudou2016"
+            keyAlias "bentudou"
+            keyPassword "bentudou2016"
+        }
+    }
+    productFlavors {
+        fir {}
+//        _360 {}
+//        baidu_android_91 {}
+//        tencent {}
+//        wandoujia {}
+//        xiaomi {}
+//        anzhi {}
+//        meizu {}
+//        lenovo {}
+//        oppo {}
+//        huawei {}
+//        yingyonghui {}
+//        mumayi {}
+//        jifeng {}
+//        leshi {}
+//        vivo {}
+    }
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile project(':commonLibrary')
+    compile project(':pulltorefreshlibrary')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile files('libs/httpmime-4.1.3.jar')
+    compile files('libs/jpush-android-2.1.7.jar')
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile files('libs/libammsdk.jar')
+    compile files('libs/alipaySdk-20160825.jar')
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+}

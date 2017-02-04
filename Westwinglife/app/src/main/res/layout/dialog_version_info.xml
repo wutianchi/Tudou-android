@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" android:layout_width="match_parent"
+    android:background="#00000000" android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/dialog_info">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/dialog_contant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:text="版本更新"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/black_base"
+            android:textSize="16sp"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/tv_connect"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/black_base"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="亲爱的小土豆们" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black_base"
+            android:textSize="14sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="      为方便使用，请尽快升级到最新版本，让我们更好的为您提供服务。" />
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:background="#f1f1f1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <Button android:id="@+id/sure_go"
+                android:text="去更新"
+                android:textSize="16sp"
+                android:textColor="@color/black_base"
+                android:background="@drawable/bg_dialog_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_height="match_parent" />
+            <TextView android:background="#f1f1f1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <Button android:id="@+id/cancel_go"
+                android:text="关闭"
+                android:textSize="16sp"
+                android:textColor="@color/gray_base"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_dialog_btn"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

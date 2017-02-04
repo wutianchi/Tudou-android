@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 方形文本输入框 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@drawable/text_editor_focused" />
+    <item android:drawable="@drawable/text_editor_bg" />
+</selector>

@@ -1,0 +1,9 @@
+diff a/Westwinglife/app/src/main/AndroidManifest.xml b/Westwinglife/app/src/main/AndroidManifest.xml	(rejected hunks)
+@@ -56,6 +56,7 @@
+          <activity android:launchMode="singleTask" android:screenOrientation="portrait" android:name=".activity.PayOrderActivity"/>
+          <activity android:launchMode="singleTask" android:screenOrientation="portrait" android:name=".activity.ShareBentudouActivity"/>
+          <activity android:launchMode="singleTask" android:screenOrientation="portrait" android:name=".activity.CartActivity"/>
+++<<<<<<< HEAD
+ +        <activity android:launchMode="singleTask" android:screenOrientation="portrait" android:name=".activity.AddtheaddressActivity"/>
+ +        <activity android:launchMode="singleTask" android:screenOrientation="portrait" android:name=".activity.ShowCityActivity"/>
+ +=======

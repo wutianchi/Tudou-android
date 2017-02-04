@@ -1,0 +1,7 @@
+<!-- 长度受限文本编辑框 的属性-->
+<resources>
+    <declare-styleable name="LimitedEditText">
+        <!-- max Characters count limit. 0 means no limit. -->
+        <attr name="maxLength" format="integer" />
+    </declare-styleable>
+</resources>

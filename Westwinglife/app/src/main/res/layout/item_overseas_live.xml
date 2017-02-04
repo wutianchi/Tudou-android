@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView android:src="@drawable/live_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <LinearLayout android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_live_goods_title"
+                android:text="这里是标题"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_live_goods_slogan"
+                android:text="全球好产品的搬运工"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/gray_six"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <!--<TextView android:id="@+id/tv_live_goods_share"-->
+            <!--android:text="分享"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="@color/color_selected"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <LinearLayout
+            android:id="@+id/llt_share_icon"
+           android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/shangpinxiangqing_botton_fenixang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/icon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/newplay" />
+
+        <com.bentudou.westwinglife.widget.VideoSuperPlayer
+            android:id="@+id/video"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_goods_img"-->
+        <!--android:src="@drawable/ic_launcher"-->
+        <!--android:scaleType="centerInside"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <HorizontalScrollView
+        android:id="@+id/hs_images_container"
+        android:scrollbars="none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:background="@color/white"
+            android:paddingBottom="5dp"
+            android:layout_height="match_parent"
+            android:id="@+id/live_detail_image"
+            android:orientation="horizontal"/>
+    </HorizontalScrollView>
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:text="免邮免税"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:textColor="@color/red_base"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_red_border"
+            android:layout_width="45dp"
+            android:layout_height="14dp" />
+        <TextView
+            android:id="@+id/tv_live_goods_content"
+            android:text="                免邮免税"
+            android:lineSpacingExtra="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView android:text="承运: 西翼物流    不支持退换货"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_live_goods_time"
+        android:text="有效期至:"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_live_goods_number"
+        android:text="库存:"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_live_goods_price"
+        android:text="$200"
+        android:textSize="15sp"
+        android:textColor="@color/color_selected"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_to_buy"
+        android:text="立即购买"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@drawable/bg_cart_textcolor"
+        android:background="@drawable/bg_btn_login"
+        android:layout_width="290dp"
+        android:layout_height="43dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp" />
+</LinearLayout>

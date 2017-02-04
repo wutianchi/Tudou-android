@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/et_phone_number"
+        android:hint="手机号"
+        android:textSize="14sp"
+        android:phoneNumber="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    <TextView
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <EditText
+            android:id="@+id/et_identifying_code"
+            android:hint="短信验证码"
+            android:textSize="14sp"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <com.bentudou.westwinglife.view.TimeButton
+            android:enabled="false"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:text="获取验证码"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:id="@+id/register_number_button"
+            android:background="@color/white"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_password"
+            android:inputType="textPassword"
+            android:hint="设置密码"
+            android:textSize="14sp"
+            android:maxLength="20"
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp" />
+        <CheckBox android:id="@+id/checkbox_ispassword_register"
+            android:layout_gravity="center_vertical"
+            android:layout_width="25dp"
+            android:layout_height="18dp"
+            style="@style/CustomCheckboxTheme"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <EditText
+        android:id="@+id/et_repassword"
+        android:hint="邀请码(非必填)"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    <TextView
+        android:layout_marginLeft="33dp"
+        android:layout_marginRight="33dp"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+    <Button android:text="注册"
+        android:id="@+id/btn_register"
+        android:textSize="16sp"
+        android:textColor="@drawable/bg_cart_textcolor"
+        android:background="@drawable/bg_btn_login"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <LinearLayout android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView android:src="@drawable/regsiter_down"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_user_law"
+            android:text=" 本人接受《用户服务条款》与《进口个人委托申请委托》"
+            android:textSize="12sp"
+            android:textColor="@color/gray_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

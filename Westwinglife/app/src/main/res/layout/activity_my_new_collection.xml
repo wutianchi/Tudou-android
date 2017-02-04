@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/backcolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rlt_have_collection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.bentudou.westwinglife.library.RefreshSwipeMenuListView
+                android:scrollbars="none"
+                android:id="@+id/cslv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/backcolor"
+                android:dividerHeight="1.0px"/>
+        </LinearLayout>
+        <LinearLayout android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:background="@color/gray_eee"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView android:src="@drawable/xiaotudou"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:text="小土豆温馨提示:"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/gray_base"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView android:text="喜欢可以直接加入购物车哟~"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_six"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/tv_pay_order"
+                        android:src="@drawable/gouwuche_baise"
+                        android:gravity="center"
+                        android:padding="11dp"
+                        android:background="@drawable/bg_btn_zheng_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/tv_cart_num"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:background="@drawable/bg_btn_cart_num"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_no_collect"
+        android:visibility="gone"
+        android:text="您还没有收藏商品"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/gray_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

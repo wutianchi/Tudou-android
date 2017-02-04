@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="360dp"
+        android:layout_height="65dp">
+        <ImageView
+            android:id="@+id/message_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/xiaoxi" />
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <TextView android:text="宝宝夏季出游"
+                android:id="@+id/message_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/black_base"
+                android:textSize="16sp" />
+
+            <TextView android:text="2018-12-01 星期二"
+                android:layout_marginTop="8dp"
+                android:id="@+id/message_time"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_base" />
+        </LinearLayout>
+        <TextView android:id="@+id/message_read"
+            android:visibility="gone"
+            android:background="@drawable/bg_yuan_level"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+    </LinearLayout>
+    <LinearLayout android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+        <TextView
+            android:background="@color/gray_eee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

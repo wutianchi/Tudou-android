@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" android:layout_width="match_parent"
+    android:background="#00000000" android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/dialog_info">
+    <LinearLayout android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dialog_contant"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <TextView android:id="@+id/tv_content"
+            android:layout_height="450dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:maxLines="20"
+            android:textColor="@color/black_base"
+            android:textSize="14sp"/>
+        <LinearLayout android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button android:id="@+id/sure_go"
+                android:text="我知道了"
+                android:textSize="16sp"
+                android:textColor="@color/black_base"
+                android:background="@color/backcolor"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 公共用色 -->
+    <color name="touming">#00ffffff</color>
+    <color name="font_white">#ffffffff</color>
+    <color name="font_white_disable">#f8f8f8</color>
+    <color name="white_gray">#fcfcfc</color>
+    <color name="color_text">#343434</color>
+
+    <color name="red_yidao">#ec4949</color>
+    <color name="red_deep">#cf4141</color>
+    <color name="btn_order_red">#be1a35</color>
+    <color name="word_color">#c20122</color>
+    <color name="btn_order">#f24343</color>
+    <color name="gray_title">#0F0F0F</color>
+    <color name="order_state">#4c4c4c</color>
+    <color name="gray_border_e5">#e5e5e5</color>
+    <color name="gray_text8">#989898</color>
+    <color name="gray_border">#ededed</color>
+    <color name="gray_de">#dedede</color>
+    <color name="option_color">#afafaf</color>
+    <color name="btn_order_black">#3c3b3b</color>
+    <color name="grey_color_text">#9a9a9a</color>
+    <color name="system_bg">#f3f3f3</color>
+    <color name="red_fe6163">#fe6163</color>
+    <color name="red_base">#ec5051</color>
+    <color name="share_color">#8ec21f</color>
+    <color name="share_color_p">#7ba71d</color>
+    <color name="color_wuliu_out">#09cf61</color>
+    <color name="color_selected">#08ab51</color>
+    <color name="color_select">#079446</color>
+    <color name="color_youhui">#51a4f8</color>
+    <color name="black_base">#333333</color>
+    <color name="gray_coupon_base">#dbdbdb</color>
+    <color name="gray_base">#999999</color>
+    <color name="gray_five">#959595</color>
+    <color name="gray_six">#666666</color>
+    <color name="gray_eee">#eeeeee</color>
+    <!--
+    <color name="transparent_background">#9000</color>
+    -->
+    <!-- 雪白色 -->
+    <color name="floralwhite">#FFFAF0</color>
+    <!--标题颜色-->
+    <color name="title_color">#191919</color>
+    <color name="black_argb_color">#28191919</color>
+    <!--背景色-->
+    <color name="backcolor">#f8f8f8</color>
+    <!--九宫格线颜色-->
+    <color name="linecolor">#b1b1b1</color>
+    <!--tab文字颜色-->
+    <color name="tab_text">#efefef</color>
+    <color name="head_text_color">#cacaca</color>
+    <color name="head_china_text">#292929</color>
+    <color name="headlines_hadcount">#bf1c39</color>
+    <color name="redmore">#cd191d</color>
+    <color name="redmores">#c20122</color>
+    <color name="reges">#be1a35</color>
+    <color name="regesd">#ffe31a39</color>
+    <color name="statecolor">#ff5966</color>
+    <color name="rege">#daa7a7</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_href">#facccccc</color>
+    <color name="trans_href">#414e4e4e</color>
+    <color name="trans_dingbu">#4e000000</color>
+    <color name="trans_deep_dingbu">#8d000000</color>
+    <color name="gray_search">#e9ecec</color>
+    <color name="white">#ffffff</color>
+    <color name="login">#a0a0a0</color>
+    <color name="cart">#292929</color>
+    <color name="lan">#BB0976FF</color>
+    <color name="black">#000000</color>
+    <color name="half_black">#50000000</color>
+    <color name="tc">#f2f2f2</color>
+    <color name="top_bg_color">#00ffffff</color>
+    <!--<color name="textcolor">#ff979797</color>-->
+    <color name="textcolor">#ffb7b6bb</color>
+    <color name="textcolors">#2e2e2e</color>
+    <color name="red">#ec6941</color>
+    <color name="big_orange">#eb7a4d</color>
+    <color name="big_orange_down">#c3653a</color>
+    <color name="blue">#00bff3</color>
+    <color name="green">#afe51e</color>
+    <color name="gray">#ebebeb</color>
+    <color name="gray_button">#d1d1d1</color>
+    <color name="gray_black">#ffe1e1e1</color>
+    <color name="gray_black_hong">#d9a7a7</color>
+    <color name="gray_yidao">#f0f0f0</color>
+    <color name="yellow">#facb25</color>
+    <color name="yellow_deep">#febb31</color>
+    <color name="yellow_light">#ffffe0</color>
+    <color name="mystore_text">#9a9a9a</color>
+    <!-- 亮黄色 -->
+    <!-- fcfcde -->
+    <color name="item_yello_light">#fff8e4</color>
+    <color name="yellow_two">#40facb25</color>
+    <color name="black_menu">#303539</color>
+    <color name="chat_hint">#ffcccccc</color>
+    <color name="line_color">#C4C4C3</color>
+    <color name="order_service_color">#f7ebe7</color>
+    <!-- 注册登陆模块颜色 -->
+    <color name="line_gray_yidao">#D1D1D1</color>
+    <color name="regist_btn_gray">#acacac</color>
+    <color name="regist_back_gray">#f8f8f8</color>
+    <color name="message_border_color">#e7e7e7</color>
+    <color name="regist_blue">#005fbe</color>
+    <color name="regist_hint_color">#d4d4d4</color>
+    <!-- msg   list  item -->
+    <color name="color_msg_list_item_time">#666666</color>
+
+    <!--  -->
+    <color name="color_other_msg_details_time">#2d2d2d</color>
+    <color name="color_msg_not_read">#a40000</color>
+    <!-- 未读状态的色值 -->
+    <color name="color_msg_read">#313131</color>
+    <!-- 已读状态的色值 -->
+
+
+    <!-- 新订单弹出页 -->
+    <color name="window_new_order_ignore">#2d2d2d</color>
+
+    <!-- float  ui -->
+    <color name="color_float_ui_msg_num">#006807</color>
+    <!-- 未读消息条数的颜色 -->
+    <color name="color_float_msg_type">#e17641</color>
+    <!-- 消息类型的  title -->
+    <color name="color_float_msg_info">#313131</color>
+    <!-- 消息内容 -->
+    <color name="calendar_week_bar">#707070</color>
+    <!-- 日历星期的颜色 -->
+    <color name="color_travel_change">#747474</color>
+    <!-- 行程变更变亮的颜色 -->
+    <color name="btn_hint_status">#808080</color>
+    <!-- 按钮不可按状态 -->
+    <color name="lvsekuang">#535840</color>
+    <!-- 绿色框的字体颜色 -->
+
+    <color name="color_main_textview_busy">#cf5513</color>
+    <color name="color_main_textview_nobusy">#5f6644</color>
+    <color name="color_remark_bg">#f3f2f2</color>
+    <color name="details_last_line">#FF4E00</color>
+    <color name="details_next_line">#00820C</color>
+    <color name="shanhu_color">#FF7F50</color>
+    <color name="qianlan_color">#14ABFC</color>
+    <color name="over_color">#37b4ea</color>
+    <color name="in_color">#ee4447</color>
+    <color name="seek_bar_select">#033333</color>
+    <color name="division_line">#C4C4C3</color>
+
+    <!-- 列表项正常状态下的的背景色 -->
+    <color name="list_item_normal">#F3F3F3</color>
+    <!-- 列表项点击状态下的的背景色 -->
+    <color name="list_item_selected">#DADADA</color>
+    <color name="order_detail_font_gray">#999999</color>
+    <!--  -->
+    <color name="login_bg">#2D2D2D</color>
+    <color name="login_text_color">#ffffff</color>
+    <color name="service_order_detail_countdown_back">#fff8e4</color>
+    <color name="service_order_detail_countdown_divider">#feb55f</color>
+    <!-- color name="orange">#ffa500</color-->
+    <color name="gray_white">#cccccc</color>
+    <!--立即抢购和即将开始颜色-->
+    <color name="special_car">#d80000</color>
+    <color name="special_car_next">#ff7900</color>
+    <color name="special_car_ne">#ff7800</color>
+    <!-- 账户充值页 -->
+    <color name="topup_ui_bg">#f3f3f3</color>
+    <color name="mark_txt_color">#A0A0A0</color>
+
+    <!-- 司机页面 -->
+    <color name="driver_background">#333333</color>
+    <color name="driver_voice_background">#2d2d2d</color>
+    <color name="global_btn_pressed_red">#cd2327</color>
+    <!-- 文字背景色 -->
+    <color name="black_bg">#f0f0f0</color>
+    <color name="we_bg">#f6f6f6</color>
+    <color name="we_line">#e9e9e9</color>
+    <!-- 服务订单列表 -->
+    <color name="light_yellow">#f9f5ed</color>
+    <color name="dark_yellow">#fff8e4</color>
+    <color name="order_in_service_bg">#F8F8F8</color>
+    <color name="status_bg">#E9E9E9</color>
+    <color name="order_type_mark">#888888</color>
+
+    <!-- 我的订单 -->
+    <color name="my_order_text_color">#222222</color>
+    <!-- list 分割线 -->
+    <color name="list_divider">#f8f8f8</color>
+    <!-- 目的地城市 -->
+    <color name="choose_arrive_city_bacground">#FFFFFF</color>
+    <color name="choose_arrive_catory_bacground">#F8F8F8</color>
+
+    <!-- 时间 性别 选择 -->
+    <color name="filter_radiobutton_selected">#E9E9E9</color>
+    <color name="filter_radiobutton_normal">#FFFFFF</color>
+    <color name="filter_choose_address_selected">#E9E9E9</color>
+    <color name="filter_choose_address_nomal">#E9E9E9</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="choose_gender_nomal">#f2f2f2</color>
+    <color name="choose_gender_pressed">#cccccc</color>
+    <color name="text_1_background_color">#dcdcdc</color>
+
+    <color name="activity_carinformation_item">#FFFFFF</color>
+    <color name="activity_carinformation_item_left_textcolor">#7A7A7A</color>
+    <!--dialog-->
+    <color name="cor_c8c8c8">#c8c8c8</color>
+    <color name="cor_222222">#222222</color>
+    <color name="cor_fdf7e4">#FDF7E4</color>
+</resources>

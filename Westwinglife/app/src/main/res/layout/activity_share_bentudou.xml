@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="@color/backcolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView android:src="@drawable/genrenzhongxin_fenxianghaoyou"
+            android:layout_marginTop="20dp"
+            android:layout_width="230dp"
+            android:layout_height="280dp" />
+        <TextView android:text="扫一扫,您的朋友也可以下载笨土豆客户端"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/share_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_open_share"
+            android:text="分享笨土豆APP"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/bg_share_login"
+            android:layout_width="290dp"
+            android:layout_height="40dp" />
+        <!--<LinearLayout android:orientation="horizontal"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_get_user_info_weixin"-->
+                <!--android:text="获取微信info"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:background="@drawable/bg_share_login"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="40dp" />-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_get_user_info_weibo"-->
+                <!--android:text="获取微博info"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:background="@drawable/bg_share_login"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="40dp" />-->
+            <!--<Button-->
+                <!--android:id="@+id/btn_get_user_info_qq"-->
+                <!--android:text="获取qqinfo"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:background="@drawable/bg_share_login"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="40dp" />-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/llt_share"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:orientation="vertical"-->
+        <!--android:background="@color/white"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="145dp">-->
+        <!--<TextView android:background="@color/gray_eee"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp" />-->
+        <!--<LinearLayout android:orientation="horizontal"-->
+            <!--android:layout_marginLeft="17dp"-->
+            <!--android:layout_marginRight="17dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="105dp">-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llt_share_weixin"-->
+                <!--android:orientation="vertical"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<ImageView android:src="@drawable/fenxiang_weixin"-->
+                    <!--android:layout_width="49dp"-->
+                    <!--android:layout_height="49dp" />-->
+                <!--<TextView android:text="微信"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llt_share_pengyouquan"-->
+                <!--android:orientation="vertical"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<ImageView android:src="@drawable/fenxiang_pengyouquan"-->
+                    <!--android:layout_width="49dp"-->
+                    <!--android:layout_height="49dp" />-->
+                <!--<TextView android:text="朋友圈"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:id="@+id/llt_share_weibo"-->
+                <!--android:orientation="vertical"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="match_parent">-->
+                <!--<ImageView android:src="@drawable/fenxiang_weibo"-->
+                    <!--android:layout_width="49dp"-->
+                    <!--android:layout_height="49dp" />-->
+                <!--<TextView android:text="微博"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+        <!--<TextView-->
+            <!--android:background="@color/gray_eee"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp" />-->
+        <!--<TextView android:id="@+id/tv_share_cancel"-->
+            <!--android:text="取消"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="@color/black_base"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

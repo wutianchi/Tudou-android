@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/backcolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:paddingLeft="33dp"
+                android:paddingRight="33dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <Button
+                    android:id="@+id/btn_add_address"
+                    android:text="添加收货地址"
+                    android:textSize="16sp"
+                    android:textColor="@drawable/bg_cart_textcolor"
+                    android:background="@drawable/bg_btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+            <com.bentudou.westwinglife.otherview.SwipeMenuListView
+                android:id="@+id/smlv_address"
+                android:divider="@color/backcolor"
+                android:dividerHeight="8dp"
+                android:layout_marginTop="5dp"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView android:id="@+id/tv_no_address"
+                android:visibility="gone"
+                android:text="您的收货地址为空"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/gray_base"
+                android:layout_width="match_parent"
+                android:layout_height="500dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

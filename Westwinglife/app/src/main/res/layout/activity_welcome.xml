@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start"
+    >
+    <ImageView android:id="@+id/start_img"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView android:id="@+id/tv_version"
+        android:text=""
+        android:textSize="13sp"
+        android:textColor="@color/textcolor"
+        android:background="@drawable/bg_daojishi"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_width="55dp"
+        android:layout_height="25dp" />
+    <!--<TextView-->
+    <!--android:id="@+id/txt_name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:textSize="30sp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:text="@string/app_name"-->
+    <!--/>-->
+    <!--<ImageView-->
+    <!--android:id="@+id/img_logo"-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:layout_above="@id/txt_name"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:src="@drawable/logo"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/txt_load"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="20dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:text="www.gunlei.com"-->
+    <!--/>-->
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/backcolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlt_cart_data"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:background="@color/backcolor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:id="@+id/sv_cart_list"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!--<com.bentudou.westwinglife.view.MyExpandableListView-->
+                <!--android:id="@+id/elv_cart_store"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:divider="@color/we_bg"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"/> -->
+                <com.bentudou.westwinglife.view.MyListView
+                    android:id="@+id/mlv_cart_store"
+                    android:layout_gravity="center_horizontal"
+                    android:divider="@color/we_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_clear_no_use_goods"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"
+                    android:text="清除失效商品"
+                    android:textSize="12sp"
+                    android:textColor="@drawable/bg_out_textcolor"
+                    android:background="@drawable/bg_btn_out"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <CheckBox android:id="@+id/btn_all_select"
+                android:drawableRight="@drawable/btn_cart_select_cheakbox"
+                android:button="@null"
+                android:checked="true"
+                android:layout_marginLeft="10dp"
+                android:layout_width="23dp"
+                android:layout_height="23dp" />
+            <TextView android:text="全选"
+                android:textSize="14sp"
+                android:textColor="@color/black_base"
+                android:layout_marginLeft="8dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <TextView android:text="总价:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView android:id="@+id/tv_all_price"
+                android:text="$0"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/color_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button android:id="@+id/btn_commit_order"
+                android:text="结算"
+                android:layout_marginLeft="10dp"
+                android:textColor="@drawable/bg_cart_textcolor"
+                android:background="@drawable/bg_btn_zheng_login"
+                android:layout_width="82dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/sv_cart_none"
+        android:visibility="gone"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="145dp">
+                <ImageView android:src="@drawable/gouwuchekong"
+                    android:layout_width="180dp"
+                    android:layout_height="115dp" />
+                <!--<Button  android:id="@+id/btn_go_first"-->
+                <!--android:text="去逛逛"-->
+                <!--android:layout_marginTop="4dp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:background="@drawable/bg_btn_login"-->
+                <!--android:layout_width="170dp"-->
+                <!--android:layout_height="40dp" />-->
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+                <TextView android:layout_width="92dp"
+                    android:layout_height="1dp"
+                    android:background="@color/half_black"/>
+                <ImageView
+                    android:src="@drawable/shouye_quanqiujianhuo"
+                    android:scaleType="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <TextView android:layout_width="92dp"
+                    android:layout_height="1dp"
+                    android:background="@color/half_black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding ="2.5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <com.bentudou.westwinglife.view.MyGridView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:listSelector="@color/white"
+                    android:background="@color/backcolor"
+                    android:numColumns="2"
+                    android:id="@+id/cart_hot_list"
+                    android:paddingBottom="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

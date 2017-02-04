@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flowlayout="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingRight="15dp"
+        android:layout_height="42dp">
+        <ImageView android:id="@+id/btn_search_back"
+            android:layout_width="40dp"
+            android:src="@drawable/back"
+            android:scaleType="center"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_search"
+            android:hint="搜索"
+            android:textSize="12sp"
+            android:textColor="@color/gray_six"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/shouye_sousuo"
+            android:background="@drawable/bg_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="29dp" />
+    </LinearLayout>
+    <TextView android:background="@color/gray_base"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="热门搜索"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:textColor="@color/gray_six"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.bentudou.westwinglife.view.FlowLayout
+                android:id="@+id/fl"
+                flowlayout:isEqually="yes"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <LinearLayout
+                android:id="@+id/llt_lishi"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_lishi"
+                    android:text="历史记录"
+                    android:textSize="14sp"
+                    android:textColor="@color/gray_six"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+                <LinearLayout android:id="@+id/llt_delete"
+                    android:gravity="end"
+                    android:paddingRight="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/iv_dellect"
+                        android:src="@drawable/sousuo_shanchu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.bentudou.westwinglife.view.FlowLayout
+                android:id="@+id/lishi_fl"
+                flowlayout:isEqually="yes"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  bf4风格 字符串列表选择器  2015-06-06 -->
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+android:orientation="vertical" android:background="#4D5052">
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:background="#CC070707"
+        android:text="标题头"
+        android:textColor="#D5DDE5"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/item_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="0dip"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="2dip"
+        android:fastScrollAlwaysVisible="false"
+        android:fadingEdge="none"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="0dp"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:text="详细说明"
+        android:textColor="#D5DDE5"
+        android:visibility="visible" />
+    </LinearLayout>

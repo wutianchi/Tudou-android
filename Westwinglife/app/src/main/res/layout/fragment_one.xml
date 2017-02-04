@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@color/white"
+        android:gravity="bottom|center_horizontal"
+        android:id="@+id/home_relativelayout_title">
+        <!--<ImageView-->
+            <!--android:id="@+id/title_sao"-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:src="@drawable/shouye_saoyisao"/>-->
+        <EditText
+            android:id="@+id/title_search"
+            android:hint="水宝宝"
+            android:focusableInTouchMode="false"
+            android:textSize="12sp"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="45dp"
+            android:textColor="@color/gray_six"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/shouye_sousuo"
+            android:background="@drawable/bg_edittext"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
+        <Button
+            android:id="@+id/title_message"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gerenzhongxin_xiaoxi"
+            android:layout_marginTop="12dp"/>
+        <TextView android:id="@+id/tv_new_message"
+            android:visibility="gone"
+            android:background="@drawable/bg_yuan_level"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_width="8dp"
+            android:layout_height="8dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dcdcdc"/>
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:layout_below="@id/home_relativelayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:id="@+id/home_scollview">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/convenientBanner"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                app:canLoop="true"/>
+
+            <LinearLayout android:orientation="horizontal"
+                android:id="@+id/llt_hot_others"
+                android:paddingTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="@color/white"
+                android:layout_below="@+id/convenientBanner"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+                <LinearLayout android:id="@+id/llt_qiandao"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView android:src="@drawable/shouye_qiandao"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <TextView
+                        android:id="@+id/tv_qiandao"
+                        android:text="每日签到"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black_base"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/llt_lingqu"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView android:src="@drawable/shouye_hongbao"
+                        android:layout_width="21dp"
+                        android:layout_height="27dp" />
+                    <TextView android:text="领取30元"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black_base"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/llt_temai"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView android:src="@drawable/shouye_temai"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp" />
+                    <TextView android:text="特卖场"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black_base"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout android:id="@+id/llt_youhui"
+                    android:gravity="bottom|center_horizontal"
+                    android:paddingBottom="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView android:src="@drawable/shouye_youhuiquan"
+                        android:layout_width="32dp"
+                        android:layout_height="21dp" />
+                    <TextView android:text="优惠券"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/black_base"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/llt_two_banner"
+                android:layout_below="@+id/llt_hot_others"
+                android:background="@color/white"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="4dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="124dp">
+                <ImageView
+                    android:id="@+id/iv_two_banner_one"
+                    android:src="@drawable/defult_bd_img"
+                    android:scaleType="fitXY"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/iv_two_banner_two"
+                    android:src="@drawable/defult_bd_img"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <com.bentudou.westwinglife.view.MyListView
+                android:id="@+id/mlv_new_banner"
+                android:layout_below="@+id/llt_two_banner"
+                android:dividerHeight="7dp"
+                android:divider="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/center_tittle"
+                android:gravity="center_horizontal"
+                android:background="@color/white"
+                android:paddingTop="30dp"
+                android:layout_below="@+id/mlv_new_banner"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" >
+                <TextView
+                    android:text="单品推荐"
+                    android:textSize="22sp"
+                    android:textColor="@color/black_base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_border"/>
+            </LinearLayout>
+            <com.bentudou.westwinglife.view.MyListView
+                android:id="@+id/mlv_new_danpin"
+                android:layout_below="@+id/center_tittle"
+                android:dividerHeight="7dp"
+                android:divider="@color/white"
+                android:listSelector="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/bottom_tittle"
+                android:gravity="center_horizontal"
+                android:background="@color/white"
+                android:paddingTop="30dp"
+                android:layout_below="@+id/mlv_new_danpin"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" >
+                <TextView
+                    android:text="笨土豆精选"
+                    android:textSize="22sp"
+                    android:textColor="@color/black_base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="1dp"
+                    android:background="@color/gray_border"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/llt_hot_god"
+                android:padding ="2.5dp"
+                android:layout_below="@+id/bottom_tittle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <com.bentudou.westwinglife.view.MyGridView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="2"
+                    android:id="@+id/sort_car_list"
+                    android:paddingBottom="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="2.5dp"
+                android:orientation="horizontal"
+                android:id="@+id/center_bottom"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_below="@+id/llt_hot_god"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+                <ImageView
+                    android:src="@drawable/shouye_dibu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="别拉了,到底了~"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/half_black"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    <com.bentudou.westwinglife.view.ToTopImageView
+        android:id="@+id/imageView_to_top"
+        android:src="@drawable/fanhuidingbu"
+        android:scaleType="centerInside"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_fanhui" />
+</RelativeLayout>

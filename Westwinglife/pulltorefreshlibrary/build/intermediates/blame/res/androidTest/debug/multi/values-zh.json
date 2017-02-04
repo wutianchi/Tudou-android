@@ -1,0 +1,121 @@
+[
+    {
+        "outputFile": "D:\\Tudou-android\\Westwinglife\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values-zh\\values-zh.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 74,
+                    "endOffset": 125
+                },
+                "from": {
+                    "file": "D:\\Tudou-android\\Westwinglife\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\values-zh\\values-zh.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 74,
+                        "endOffset": 125
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 130,
+                    "endColumn": 79,
+                    "endOffset": 205
+                },
+                "from": {
+                    "file": "D:\\Tudou-android\\Westwinglife\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\values-zh\\values-zh.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 130,
+                        "endColumn": 79,
+                        "endOffset": 205
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 210,
+                    "endColumn": 77,
+                    "endOffset": 283
+                },
+                "from": {
+                    "file": "D:\\Tudou-android\\Westwinglife\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\values-zh\\values-zh.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 210,
+                        "endColumn": 77,
+                        "endOffset": 283
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 288,
+                    "endColumn": 60,
+                    "endOffset": 344
+                },
+                "from": {
+                    "file": "D:\\Tudou-android\\Westwinglife\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\values-zh\\values-zh.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 288,
+                        "endColumn": 60,
+                        "endOffset": 344
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 349,
+                    "endColumn": 66,
+                    "endOffset": 411
+                },
+                "from": {
+                    "file": "D:\\Tudou-android\\Westwinglife\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\values-zh\\values-zh.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 349,
+                        "endColumn": 66,
+                        "endOffset": 411
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 416,
+                    "endColumn": 64,
+                    "endOffset": 476
+                },
+                "from": {
+                    "file": "D:\\Tudou-android\\Westwinglife\\pulltorefreshlibrary\\build\\intermediates\\bundles\\debug\\res\\values-zh\\values-zh.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 416,
+                        "endColumn": 64,
+                        "endOffset": 476
+                    }
+                }
+            }
+        ]
+    }
+]

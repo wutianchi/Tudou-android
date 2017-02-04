@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/backcolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.bentudou.westwinglife.library.RefreshSwipeMenuListView
+        android:id="@+id/swipe"
+        android:scrollbars="none"
+        android:divider="@color/white"
+        android:dividerHeight="0px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tv_no_collect"
+        android:visibility="gone"
+        android:text="您还没有消息哟~"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/gray_base"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

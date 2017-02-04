@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="false">
+        <shape android:shape="rectangle">
+            <padding android:left="5dp"/>
+            <!-- 圆角 -->
+            <corners android:radius="5dp"/>
+            <!-- 边框线 -->
+            <stroke android:color="@color/gray_search" android:width="0.5dp"/>
+            <!-- 填色 -->
+            <solid android:color="@color/gray_search"/>
+
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <padding android:left="5dp"/>
+            <corners android:radius="5dp"/>
+            <stroke android:color="@color/gray_search" android:width="0.5dp"/>
+            <solid android:color="@color/gray_search"/>
+        </shape>
+    </item>
+</selector>

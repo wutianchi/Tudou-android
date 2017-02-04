@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/backcolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView android:id="@+id/sv_data"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_banner_yunying"
+                android:visibility="gone"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+            <com.bentudou.westwinglife.view.MyGridView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="2"
+                android:id="@+id/mgv_goods_list"
+                android:paddingBottom="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <TextView android:id="@+id/tv_no_data"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@color/gray_six"
+        android:text="没有找到相关的商品噢，换个关键词我帮您再找找"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

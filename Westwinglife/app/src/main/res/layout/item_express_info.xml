@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="20dp"
+            android:layout_height="58dp">
+            <TextView
+                android:id="@+id/tv_up_line"
+                android:background="@color/gray_de"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/tv_zhengc"
+                    android:background="@drawable/bg_yuan_gray"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+                <TextView android:id="@+id/tv_now_states"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_yuan_lv_wuliu"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_down_line"
+                android:background="@color/gray_de"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+            <LinearLayout android:paddingLeft="15dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView android:id="@+id/tv_wuliu_content"
+                    android:text="--"
+                    android:textColor="@color/gray_base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:id="@+id/tv_wuliu_time"
+                    android:text="--"
+                    android:textSize="12sp"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/gray_base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_bottom_line"
+                android:background="@color/gray_de"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

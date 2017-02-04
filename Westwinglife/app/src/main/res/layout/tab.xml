@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="35dp">
+    <TextView android:id="@+id/tv_tab0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="全部"
+        android:textSize="14sp"
+        android:gravity="center" />
+    <TextView android:id="@+id/tv_tab1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="待付款"
+        android:textSize="14sp"
+        android:gravity="center" />
+    <TextView android:id="@+id/tv_tab2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="已付款"
+        android:textSize="14sp"
+        android:gravity="center" />
+    <TextView android:id="@+id/tv_tab3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="失效"
+        android:textSize="14sp"
+        android:gravity="center" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView android:id="@+id/iv_start_weibo"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background3"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/iv_start_weibo"-->
+        <!--android:text="立即体验"-->
+        <!--android:textColor="@drawable/welcome_text"-->
+        <!--android:layout_width="140dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="@drawable/bg_loging"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="45dp" />-->
+
+</RelativeLayout>

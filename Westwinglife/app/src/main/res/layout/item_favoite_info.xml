@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/goods_icon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_launcher" />
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:lines="2"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+            <TextView
+                android:id="@+id/goods_price"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                android:textColor="@color/color_selected" />
+            <TextView
+                android:id="@+id/goods_shixiao"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:text="已失效"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textColor="@color/red_base" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_add_cart"
+            android:text="加入购物车"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="@drawable/bg_out_textcolor"
+            android:background="@drawable/bg_btn_out"
+            android:layout_marginRight="8dp"
+            android:layout_width="96dp"
+            android:layout_height="28dp" />
+    </LinearLayout>
+</LinearLayout>

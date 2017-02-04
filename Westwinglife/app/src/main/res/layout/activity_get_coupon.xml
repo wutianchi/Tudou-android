@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/backcolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/coupon_banner"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.bentudou.westwinglife.view.MyListView
+                android:layout_marginTop="8dp"
+                android:id="@+id/mlv_get_coupon"
+                android:divider="@color/backcolor"
+                android:dividerHeight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView android:id="@+id/tv_no_get_coupon"
+                android:visibility="gone"
+                android:text="就算没有优惠券可领,也不能任性不买哟~"
+                android:gravity="center_horizontal"
+                android:paddingTop="80dp"
+                android:textColor="@color/gray_base"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

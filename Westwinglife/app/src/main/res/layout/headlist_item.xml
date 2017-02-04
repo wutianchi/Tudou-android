@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="2.5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="172.5dp"
+            android:layout_height="185dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:id="@+id/headspicallist_img"/>
+            <ImageView android:id="@+id/img_top_left_corner_mark"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView android:id="@+id/img_top_right_corner_mark"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView android:id="@+id/img_bottom_left_corner_mark"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView android:id="@+id/img_bottom_right_corner_mark"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:text="--"
+            android:textSize="12sp"
+            android:textColor="@color/black_base"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_shop_price"
+                android:text="$ 10.99 "
+                android:textSize="16sp"
+                android:textColor="@color/color_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <ImageView
+                android:id="@+id/iv_flag"
+                android:src="@drawable/flag_us"
+                android:layout_width="11dp"
+                android:layout_height="11dp" />
+            <TextView
+                android:id="@+id/tv_market_price"
+                android:text="美国直邮"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="10sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black_base"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <!--<TextView-->
+                <!--android:id="@+id/tv_zhekou"-->
+                <!--android:visibility="visible"-->
+                <!--android:text="活动商品"-->
+                <!--android:textSize="11sp"-->
+                <!--android:textColor="@color/red_base"-->
+                <!--android:background="@drawable/bg_red_border"-->
+                <!--android:gravity="center"-->
+                <!--android:ellipsize="end"-->
+                <!--android:singleLine="true"-->
+                <!--android:layout_width="55dp"-->
+                <!--android:layout_height="17dp" />-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

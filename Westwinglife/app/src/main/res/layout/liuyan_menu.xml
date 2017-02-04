@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/exit_layout"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/ll_btn"
+    >
+         <TextView
+                 android:layout_width="260dp"
+                 android:layout_height="wrap_content"
+                 android:textColor="#333333"
+                 android:layout_marginTop="20dp"
+                 android:textSize="16sp"
+                 android:gravity="center_horizontal"
+                 android:text="感谢您的参与" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:layout_marginTop="9dp"
+        android:textSize="16sp"
+        android:gravity="center_horizontal"
+        android:text="我们会尽快找到您的需求" />
+        <Button
+                   android:layout_marginTop="20dp"
+                   android:id="@+id/exitBtn0"
+                   android:layout_width="260dp"
+                   android:layout_height="43dp"
+                   android:text="确定"
+                   android:textSize="16sp"
+                   android:textColor="#333333"
+                   android:background="@drawable/b_btn_ok"
+                   android:gravity="center"
+                   android:onClick="exitbutton0"
+            />
+</LinearLayout>

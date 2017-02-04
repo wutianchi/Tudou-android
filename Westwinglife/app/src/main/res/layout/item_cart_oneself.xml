@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="86dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="85.5dp">
+        <CheckBox
+            android:drawableRight="@drawable/btn_cart_select_cheakbox"
+            android:paddingRight="6dp"
+            android:checked="false"
+            android:id="@+id/cbx_cart_coupon"
+            android:layout_width="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:button="@null" />
+        <ImageView android:id="@+id/iv_cart_img"
+            android:background="@null"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:layout_width="73dp"
+            android:layout_height="73dp" />
+        <LinearLayout android:orientation="vertical"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_name"
+                android:text="--"
+                android:textSize="12sp"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:textSize="12sp"
+                android:gravity="center_vertical"
+                android:textColor="@color/color_selected"
+                android:id="@+id/tv_price"
+                android:text="--"
+                />
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/tv_goods_no_use"
+                    android:visibility="visible"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:textColor="@color/red_base"
+                    android:layout_height="match_parent" />
+                <LinearLayout
+                    android:id="@+id/ll_count_sub"
+                    android:layout_width="40dp"
+                    android:gravity="right"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/iv_count_sub"
+                        android:layout_width="31dp"
+                        android:src="@drawable/count_sub_ico"
+                        android:layout_height="22dp"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/et_count_value"
+                    android:layout_width="46dp"
+                    android:background="@mipmap/count_et_bg_img"
+                    android:textSize="14sp"
+                    android:focusable="true"
+                    android:text="1"
+                    android:numeric="integer"
+                    android:maxLength="3"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:layout_height="22dp" />
+                <LinearLayout
+                    android:id="@+id/ll_count_add"
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/iv_count_add"
+                        android:layout_width="31dp"
+                        android:src="@drawable/count_add_ico"
+                        android:layout_height="22dp"
+                        android:scaleType="fitXY"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:background="@color/backcolor"
+        android:layout_marginLeft="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+</LinearLayout>

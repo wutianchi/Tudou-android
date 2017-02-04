@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/llt_coupon_status"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/youhuiquan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/tv_status"
+            android:text="满减券"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/black_base"
+            android:layout_width="50dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp"
+            android:paddingLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/llt_is_manjian"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/tv_dallor"
+                    android:text="¥"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@color/color_youhui"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView android:id="@+id/tv_coupon_num"
+                    android:text="66"
+                    android:textSize="35sp"
+                    android:gravity="center"
+                    android:textColor="@color/color_youhui"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:id="@+id/tv_coupon_name"
+                    android:text="[满5000可用]新手优惠券"
+                    android:textColor="@color/gray_six"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_coupon_time"
+                    android:text="有效期至:2016/06/30 23:59"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_six"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

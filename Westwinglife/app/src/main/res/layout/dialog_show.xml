@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" android:layout_width="match_parent"
+    android:background="#00000000" android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/dialog_info">
+    <LinearLayout android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/dialog_contant"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+        <LinearLayout android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView android:id="@+id/tv_store"
+                android:text="[美国1号仓]"
+                android:textColor="@color/black_base"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_connect"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black_base"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:text="商品总价" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black_base"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="超过¥2000限额" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black_base"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="请分开结算" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black_base"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="海关规定本仓库多件商品" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black_base"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="总价低于¥2000才可以过关噢!" />
+        <LinearLayout android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button android:id="@+id/sure_go"
+                android:text="我知道了"
+                android:textSize="16sp"
+                android:textColor="@color/black_base"
+                android:background="@color/backcolor"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

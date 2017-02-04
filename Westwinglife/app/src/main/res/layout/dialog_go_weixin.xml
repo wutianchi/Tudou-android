@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content" android:layout_width="match_parent"
+    android:background="#00000000" android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/dialog_info">
+    <RelativeLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/dialog_contant"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <TextView
+            android:id="@+id/tv_connect"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="22dp"
+            android:textColor="@color/black_base"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="已成功复制服务号,请到微信中" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="45dp"
+            android:textColor="@color/black_base"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="关注我们" />
+        <TextView
+            android:layout_marginTop="80dp"
+            android:background="#f1f1f1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <LinearLayout android:orientation="horizontal"
+            android:layout_marginTop="81dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button android:id="@+id/cancel_go"
+                android:text="取消"
+                android:textSize="16sp"
+                android:textColor="@color/gray_base"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_dialog_btn"
+                android:layout_height="match_parent" />
+            <TextView android:background="#f1f1f1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
+            <Button android:id="@+id/sure_go"
+                android:text="确定"
+                android:textSize="16sp"
+                android:textColor="@color/black_base"
+                android:background="@drawable/bg_dialog_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

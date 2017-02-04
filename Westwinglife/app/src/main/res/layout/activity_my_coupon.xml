@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@color/backcolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioGroup
+            android:id="@+id/rg_select_coupon_style"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+            <RadioButton
+                android:id="@+id/rb_can_use_coupon"
+                android:text="未使用"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:layout_marginLeft="24dp"
+                android:textColor="@drawable/bg_cb_textcolor"
+                android:background="@drawable/border_line_tab"
+                android:layout_width="73dp"
+                android:layout_height="match_parent" />
+            <RadioButton android:text="已过期"
+                android:id="@+id/rb_donnot_use_coupon"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_marginLeft="46dp"
+                android:textColor="@drawable/bg_cb_textcolor"
+                android:background="@drawable/bg_dialog_btn"
+                android:layout_width="73dp"
+                android:layout_height="match_parent" />
+            <RadioButton android:text="已使用"
+                android:id="@+id/rb_had_use_coupon"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_marginLeft="46dp"
+                android:textColor="@drawable/bg_cb_textcolor"
+                android:background="@drawable/bg_dialog_btn"
+                android:layout_width="73dp"
+                android:layout_height="match_parent" />
+        </RadioGroup>
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/sv_coupon"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <com.bentudou.westwinglife.view.MyListView
+                android:id="@+id/mlv_coupon"
+                android:divider="@color/backcolor"
+                android:dividerHeight="5dp"
+                android:listSelector="#00000000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/tv_no_coupon"
+        android:visibility="gone"
+        android:text="您还没有优惠券"
+        android:gravity="center"
+        android:textColor="@color/gray_six"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

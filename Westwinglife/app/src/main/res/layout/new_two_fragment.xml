@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="42dp">
+        <EditText
+            android:id="@+id/et_search"
+            android:hint="搜索"
+            android:focusableInTouchMode="false"
+            android:textSize="12sp"
+            android:textColor="@color/gray_six"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/shouye_sousuo"
+            android:background="@drawable/bg_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="29dp" />
+    </LinearLayout>
+    <TextView android:background="@color/gray_border_e5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_one_class"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

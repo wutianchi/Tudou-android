@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/llt_share_dialog_qq"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="100dp">
+        <ImageView android:src="@drawable/fenixang_qq"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llt_share_dialog_weixin"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="100dp">
+        <ImageView android:src="@drawable/fenixang_weixin"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llt_share_dialog_pengyouquan"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="100dp">
+        <ImageView android:src="@drawable/fenxiang_pengyouquan"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llt_share_dialog_weibo"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="100dp">
+        <ImageView android:src="@drawable/fenxiang_weibo"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/llt_share_dialog_cancel"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="60dp"
+        android:gravity="center"
+        android:layout_height="60dp">
+        <ImageView android:src="@drawable/guanbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

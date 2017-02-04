@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<LinearLayout android:id="@+id/llt_goods"-->
+        <!--android:layout_marginTop="3dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+    <!--</LinearLayout>-->
+    <LinearLayout
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv_order_number"
+            android:text="订单号:"
+            android:textSize="14sp"
+            android:textColor="@color/gray_six"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:text="已取消"
+            android:textSize="14sp"
+            android:textColor="@color/red_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.bentudou.westwinglife.view.MyGridView
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/backcolor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mgv_goods"
+            android:listSelector="@null"
+            android:numColumns="5"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"/>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+        <TextView
+            android:id="@+id/tv_order_time"
+            android:text="下单时间:"
+            android:textSize="13sp"
+            android:textColor="@color/gray_six"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_order_all_price"
+            android:text="总价:"
+            android:textSize="13sp"
+            android:textColor="@color/black_base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:background="@color/gray_eee"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <LinearLayout
+        android:gravity="center|end"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/tv_buy_again"
+            android:text="再次购买"
+            android:gravity="center"
+            android:textColor="@drawable/bg_out_textcolor"
+            android:background="@drawable/bg_btn_out"
+            android:layout_marginRight="8dp"
+            android:layout_width="78dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+</LinearLayout>

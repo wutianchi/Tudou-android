@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView android:id="@+id/tv_second_class_name"
+        android:gravity="center"
+        android:textColor="@color/gray_six"
+        android:background="@color/backcolor"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.bentudou.westwinglife.view.MyGridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mgv_second_class_third"
+            android:listSelector="@color/white"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"/>
+    </LinearLayout>
+
+</LinearLayout>
